@@ -36,13 +36,11 @@ def main():
             characters += string.punctuation
         elif want_symbol == "N":
             characters = characters
-
-        else:
-            print ("La contraseña sadd")    
-            break
+  
+        break
     
     def randomize(len_pass):
-   
+        
         password = "".join(random.choice(characters) for n in range(len_pass))
         return password
             
